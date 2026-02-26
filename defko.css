@@ -1,0 +1,35 @@
+.header {
+    grid-area: header;
+    background-color: yellow;
+    padding: 10px;
+color: black;
+}
+.sidebar {
+grid-area: sidebar;
+    background-color: yellow;
+    padding: 10px;
+    color: black;
+}
+.main {
+    grid-area: main;
+    background-color: yellow;
+    padding: 10px;
+    color: black;
+}
+.footer {
+    grid-area: footer;
+    background-color: yellow;
+    padding: 10px;
+    color: black;
+}
+.grid-layout {
+    display: grid;
+    background-color: blueviolet;
+    grid-template-columns:  200px 1fr;
+    grid-template-rows: 40px 1fr 100px;
+    grid-template-areas: 
+        "header header "
+        "sidebar main "
+       "footer footer";
+    height: 100vh;
+}
